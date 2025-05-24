@@ -21,6 +21,22 @@ public class Product {
 
     }
 
+
+    public Product(Long id, String title, double price, boolean active) {
+        this.id = id;
+        this.title = title;
+        this.price = price;
+        this.active = active;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     @Override
     public String toString() {
         return String.format("%nProduct: id - %d, title - %s, price - %.2f, active - %s%n", id, title, price, active ? "yes" : "no");
