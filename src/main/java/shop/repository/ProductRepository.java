@@ -32,7 +32,7 @@ public class ProductRepository {
     }
 
 
-    public Product getById(Long id) {
+    public Product findById(Long id) {
         return database.get(id);
     }
 
@@ -41,13 +41,13 @@ public class ProductRepository {
         return new ArrayList<>(database.values());
     }
 
-    public void update (Long id,double newPrice){
+    public void update(Long id, double newPrice) {
         database.get(id).setPrice(newPrice);
     }
 
-        public void  deleteById (Long id){
+    public void deleteById(Long id) {
         database.remove(id);
 
-        }
+    }
 
 }
