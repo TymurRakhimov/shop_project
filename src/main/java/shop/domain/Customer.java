@@ -26,8 +26,25 @@ public class Customer {
         return id;
     }
 
+
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<Product> getCart() {
+        return cart;
     }
 
     @Override

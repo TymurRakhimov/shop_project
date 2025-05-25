@@ -8,6 +8,10 @@ public class Product {
     private double price;
     private boolean active;
 
+    public double getPrice() {
+        return price;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (!(o instanceof Product product)) return false;
@@ -29,12 +33,24 @@ public class Product {
         this.active = active;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
     public void setId(Long id) {
         this.id = id;
     }
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
+    public boolean isActive() {
+        return active;
     }
 
     @Override
